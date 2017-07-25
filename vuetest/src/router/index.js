@@ -4,6 +4,7 @@ import Hello from '@/components/Hello'
 import sayHello from '@/page/helloword'
 import childrenComponent from '@/page/childrenComponent'
 import children2 from '@/page/children2'
+import selfEvent from '@/page/selfEvent'
 
 Vue.use(Router)
 
@@ -22,6 +23,10 @@ export default new Router({
         {path:'childrenComponent',component:childrenComponent},
         {path:'children2',component:children2},
       ]
+    },
+    {
+      path: '/selfEvent',
+      component: selfEvent,
     }
   ]
 })

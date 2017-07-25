@@ -1,7 +1,7 @@
 <template>
   <div>
       <div>这是子组件的内容</div>
-      <todo-list v-bind:data = 'list'></todo-list>
+      <todo-list v-bind:data = 'list' @say='ask'></todo-list>
   </div>
 </template>
 <script>
@@ -15,7 +15,9 @@ import todoList from '../components/todoList'
             }
         },
         methods:{
-
+            ask(){
+                alert('nijiao shenme')
+            }
         }
     }
 </script>
